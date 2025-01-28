@@ -1,5 +1,5 @@
 import ValueCard from "./ValueCard";
-import { Brain, Briefcase, FileText } from "lucide-react";
+import { Brain, Briefcase, FileText, UserCheck } from "lucide-react";
 
 const ValueProposition = () => {
   const features = [
@@ -18,6 +18,11 @@ const ValueProposition = () => {
       title: "Automated Demand Letters & Docs",
       description: "Generate legally compliant letters, contracts, and forms in seconds.",
     },
+    {
+      icon: UserCheck,
+      title: "Prequalified Client Access",
+      description: "Get instant access to a pool of verified, ready-to-engage clients in your practice area.",
+    },
   ];
 
   return (
@@ -26,7 +31,7 @@ const ValueProposition = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-navy">
           Transform Your Practice
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <ValueCard
               key={index}
